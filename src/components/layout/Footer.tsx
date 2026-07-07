@@ -19,10 +19,10 @@ export function Footer() {
     <footer className="bg-white text-zinc-900 border-t-4 border-transparent [border-image:linear-gradient(to_right,#8b5cf6,#ec4899,#f59e0b)_1]">
       {/* Main footer */}
       <div className="container mx-auto px-5 max-w-7xl py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-12 mb-16">
 
-          {/* Brand col — spans 2 */}
-          <div className="lg:col-span-2">
+          {/* Brand col — spans 2 on mobile, 4 on md, 2 on lg */}
+          <div className="col-span-2 md:col-span-4 lg:col-span-2">
             <div className="flex items-center gap-2.5 mb-5 group">
               <Image src="/logo.png" alt="MobileHub Pro" width={36} height={36} className="rounded-[8px] group-hover:scale-105 transition-transform shadow-md" />
               <span className="text-[17px] font-[900] tracking-tight">

@@ -69,7 +69,7 @@ export function NewsClient({ topStory, trending }: { topStory: NewsArticle, tren
                 <p className="text-slate-500 dark:text-slate-400 text-[15px]">No articles found matching your criteria.</p>
               </div>
             ) : (
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-[20px]">
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-[16px] md:gap-[20px]">
                 {articles.map(article => (
                   <NewsCard key={article._id} article={article} />
                 ))}

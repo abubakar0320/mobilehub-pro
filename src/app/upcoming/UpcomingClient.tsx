@@ -52,7 +52,7 @@ export function UpcomingClient({ topLaunch }: { topLaunch: UpcomingPhone }) {
             <p className="text-[#64748B] text-[15px]">No upcoming devices found for these filters.</p>
           </div>
         ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[24px]">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-[16px] md:gap-[24px]">
             {phones.map(phone => (
               <UpcomingCard key={phone._id} phone={phone} />
             ))}

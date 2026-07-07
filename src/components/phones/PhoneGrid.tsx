@@ -31,7 +31,7 @@ export function PhoneGrid({
 
   if (isLoading) {
     return (
-      <div className={view === 'grid' ? "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[16px] p-[20px] md:p-[24px]" : "flex flex-col gap-[16px] p-[20px] md:p-[24px]"}>
+      <div className={view === 'grid' ? "grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-[16px] p-[20px] md:p-[24px]" : "flex flex-col gap-[16px] p-[20px] md:p-[24px]"}>
         {Array.from({ length: 8 }).map((_, i) => (
           <div key={i} className={`bg-white border border-[#E2E8F0] rounded-[12px] animate-pulse ${view === 'grid' ? 'h-[360px]' : 'h-[120px]'}`}>
             <div className={`bg-[#F1F5F9] ${view === 'grid' ? 'h-[180px] w-full' : 'h-[96px] w-[80px] m-[12px] rounded-[8px]'}`}></div>
@@ -52,7 +52,7 @@ export function PhoneGrid({
   }
 
   return (
-    <div className={view === 'grid' ? "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[16px] p-[20px] md:p-[24px]" : "flex flex-col gap-[16px] p-[20px] md:p-[24px]"}>
+    <div className={view === 'grid' ? "grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-[12px] md:gap-[16px] p-[12px] md:p-[24px]" : "flex flex-col gap-[16px] p-[16px] md:p-[24px]"}>
       {phones.map((phone, i) => (
         <motion.div
           key={phone._id}
